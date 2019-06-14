@@ -34,7 +34,7 @@ class App extends Component {
         })
     }
 
-    //is 'event' below needed?
+
     addSmurf = (event, smurf) => {
       axios
         .post(`http://localhost:3333/smurfs`, smurf)
@@ -53,7 +53,7 @@ class App extends Component {
     return (
       <div className="App">
 
-        <NavLink to= '/'> Smurfs | </NavLink>
+        <NavLink to= '/'> Smurfs List | </NavLink>
         <NavLink to= '/smurf-form'> Add A Smurf </NavLink>
 
       <Route
