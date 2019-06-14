@@ -28,34 +28,54 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the differences between `client-side routing` and `server-side routing`.
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-- [ ] Mention three tools we can use to make AJAX requests.
+
+
+
+
+
+- [x] Explain the differences between `client-side routing` and `server-side routing`.
+
+Client side routing is done by the Javascript that is loaded by the page, when the url changes, so does the diplayed information and state of the application, without sending a server request. The whole page will not refresh when using client side, only the components that changed. The whole app is loaded when first rendered, a little longer initial loading. Optimized for large volumes of changing data to be displayed and changed without having to reload the page.
+
+Serverside Routing will request a whole new page to be rendered when a link is clicked, pages are loaded as needed, spreading a load time out for every request.
+Serverside is better for search engine optimization, but everytime you need new data when entire page refreshes from the get request. Its not efficient for large volumes of quickly changing data.
+
+
+
+- [x] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+GET, POST, PUT, DELETE 
+
+
+
+- [x] Mention three tools we can use to make AJAX requests.
+
+Axios, Fetch, JQuery
+
+
+
+
 
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-- [ ] **RUN** `yarn install or npm install` at the root to retrieve all the dependencies for the node server. You will not need to create any react apps here nor will you need to install any other dependencies. You should have all you need in this repo.
-- [ ] **LOOK** at all the files you've been given for this project. One important file to note is `server.js`. This file contains an **API** that you are going to be interfacing with. Below is documentation on how to interact with the **API**.
-- [ ] **RUN** `yarn start or npm start` to get your API up and running on `http://localhost:3333`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
-- [ ] After your API is up and running, you can open chrome and type in `http://localhost:3333/smurfs`. You should see an Array `[]` with a smurf returned to you. This is an array that your **API** will be using to store our Smurf Data.
-- [ ] **LOOK** at your `village` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
-- [ ] **cd** into `village` and run `yarn install or npm install` to retrieve the client side dependencies.
-- [ ] **RUN** `yarn start or npm start` to fire up your React application.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on this Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
+- [x] **RUN** `yarn install or npm install` at the root to retrieve all the dependencies for the node server. You will not need to create any react apps here nor will you need to install any other dependencies. You should have all you need in this repo.
+- [x] **LOOK** at all the files you've been given for this project. One important file to note is `server.js`. This file contains an **API** that you are going to be interfacing with. Below is documentation on how to interact with the **API**.
+- [x] **RUN** `yarn start or npm start` to get your API up and running on `http://localhost:3333`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
+- [x] After your API is up and running, you can open chrome and type in `http://localhost:3333/smurfs`. You should see an Array `[]` with a smurf returned to you. This is an array that your **API** will be using to store our Smurf Data.
+- [x] **LOOK** at your `village` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
+- [x] **cd** into `village` and run `yarn install or npm install` to retrieve the client side dependencies.
+- [x] **RUN** `yarn start or npm start` to fire up your React application.
 
-Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
 ## Minimum Viable Product
 
 The MVP of this project will be broken up between 2 stages. Follow each step and be sure to use your design/style skills to make this application look professional.
@@ -89,6 +109,28 @@ Add a Router to this application by using React Router.
 - [ ] Then make it so you can navigate to your routes using `Link`.
 - [ ] Create two `routes` in your `App` component, one at `'/'` for your `Smurfs` component,and one at `/smurf-form` for your form.
 - [ ] Then in your `App` component, create a nav bar that will use `NavLink` to route to your different pages.
+
+
+
+
+
+
+
+Follow these steps for completing your project:
+
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Add your Project Manager as a Reviewer on the Pull-request
+- [ ] PM then will count the HW as done by  merging the branch back into master.
+
+
+
+
+
+
+
+
+
+
 
 ## STRETCH PROBLEMS
 
